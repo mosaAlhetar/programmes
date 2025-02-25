@@ -1,0 +1,17 @@
+
+/*
+* Social Menu
+*/
+
+// get a reference to our social menu
+var arabpressSocialMenu = document.querySelector(".arabpressSocialMenu");
+
+window.addEventListener("load", function (event) {
+
+    // show the menu after 1 seconds of page loads
+    setTimeout(function () {
+        if (arabpressSocialMenu != null) {
+            arabpressSocialMenu.classList.add("showarabpressSocialMenu");
+        }
+    }, 1000);
+}, false);

@@ -1,0 +1,19 @@
+
+/*
+* Reading Bar
+*/
+
+let processScroll = () => {
+	let docElem = document.documentElement,
+		docBody = document.body,
+		scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+		scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+		scrollPercent = scrollTop / scrollBottom * 100 + '%';
+		readingBar = document.getElementById('arabpressReadingBar');
+		/* if there is reading bar in the page */
+		if (readingBar != null) {
+			readingBar = readingBar.style.setProperty("--scrollAmount", scrollPercent);
+		}
+}
+
+document.addEventListener('scroll', processScroll);

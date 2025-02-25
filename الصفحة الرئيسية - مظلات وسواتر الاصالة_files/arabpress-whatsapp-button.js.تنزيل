@@ -1,0 +1,17 @@
+
+/*
+* Whatsapp Button
+*/
+
+// get a reference to our button
+var whatsappBtn = document.querySelector(".arabpressWhatsappBtn");
+
+window.addEventListener("load",function(event) {
+
+	// show the button and menu after 1 seconds of page loads
+	setTimeout(function () {
+		if (whatsappBtn != null) {
+			whatsappBtn.classList.add("showWhatsappBtn");
+		}
+	}, 1000);
+},false);

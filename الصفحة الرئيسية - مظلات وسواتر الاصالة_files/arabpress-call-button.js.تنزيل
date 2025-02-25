@@ -1,0 +1,17 @@
+
+/*
+* Call Button
+*/
+
+// get a reference to our button
+var callBtn = document.querySelector(".arabpressCallBtn");
+
+window.addEventListener("load",function(event) {
+
+	// show the button and menu after 1 seconds of page loads
+	setTimeout(function () {
+		if (callBtn != null) {
+			callBtn.classList.add("showCallBtn");
+		}
+	}, 1000);
+},false);
