@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>الصفحة الرئيسية - مظلات وسواتر الاصالة</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+    <script src='JS/main.js'></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="header-top">
+            <div class="menu-icon">
+                <div class="menu-container" id="menuContainer">
+                    <div class="menu-trigger" id="menuTrigger">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                    <div class="dropdown-menu inactive" id="dropdownMenu">
+                        <button class="close-btn" id="closeBtn">
+                            <i class="ri-close-line"></i>
+                        </button>
+                        <h3>شركة سندوش<br><span>بنل وغرف جاهزة</span></h3>
+                        <ul>
+                            <li class="dropdownItem"><i class="ri-home-4-line"></i> <a href="#">الصفحة الرئيسية</a></li>
+                            <li class="dropdownItem"><i class="ri-briefcase-4-line"></i> <a href="#">برجولات</a></li>
+                            <li class="dropdownItem"><i class="ri-shopping-bag-3-line"></i> <a href="#">مظلات</a></li>
+                            <li class="dropdownItem"><i class="ri-shopping-bag-3-line"></i> <a href="#">سواتر</a></li>
+                            <li class="dropdownItem"><i class="ri-shopping-bag-3-line"></i> <a href="#">هناجر ومستودعات</a></li>
+                            <li class="dropdownItem"><i class="ri-shopping-bag-3-line"></i> <a href="#">شبوك</a></li>
+                            <li class="dropdownItem"><i class="ri-shopping-bag-3-line"></i> <a href="#">قرميد</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <span class="main-color">شركة</span>
+                <span> سندوش بنل وغرف جاهزة </span>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input class="input" type="search" placeholder="بحث : الكلمات الدلالية #الهاش_تاج">
+            </div>
+            <div class="social-icons">
+                <i class="ri-facebook-line"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-telegram-line"></i>
+                <i class="ri-youtube-line"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home-container">
+        <div id="whatsapp">
+            <a
+              href="https://api.whatsapp.com/send?phone=31633854062"
+              target="_blank"
+              id="toggle1"
+              rel="noopener noreferrer"
+              class="wtsapp"
+            >
+              <i class="ri-whatsapp-line"></i>
+            </a>
+          </div>
+          <section>
+            <div class="request-quote">
+                <h4>املأ النموذج لتحصل على عرضك الخاص!</h4>
+                <div class="modal">
+                    <form class="form" id="quoteForm">
+                        <div class="banner"></div>
+                        <label class="label-title">استكشف عروضنا المميزة لمنتجات الساندوتش بانل</label>
+                        <p class="description-request">الآن خصومات كبيرة بسبب الافتتاح المرتقب لمقرنا الجديد</p>
+                        
+                        <div class="modal--body">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">الاسم</label>
+                                    <input type="text" class="form-control" id="name" name="to_name" required placeholder="يرجى إدخال الاسم">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control" id="email" name="to_email" required placeholder="يرجى إدخال البريد الإلكتروني">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">رقم الهاتف</label>
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="يرجى إدخال رقم الهاتف">
+                                </div>
+                            </div>
+        
+                            <div class="col">
+                                <div id="serviceProductForm"></div> <!-- يتم استيراده من ملف خارجي -->
+                                <div class="form-group">
+                                    <label for="quantity">الكمية</label>
+                                    <input type="text" class="form-control" id="quantity" name="quantity" placeholder="يرجى إدخال الكمية">
+                                </div>
+                            </div>
+        
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="address">العنوان</label>
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="يرجى إدخال العنوان">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">الرسالة</label>
+                                    <textarea class="form-control" id="message" name="message" placeholder="اكتب رسالتك"></textarea>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <span id="successMessage" style="display:none;">شكرا لك على تواصلك</span>
+        
+                        <div class="modal--footer">
+                            <label class="price"><sup>$</sup>0<sub>السعر</sub></label>
+                            <button type="submit" class="upgrade-btn">تواصل معنا</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </section>
+    </div>
+
+</div>
+<div class="footer">
+    <p>جميع الحقوق محفوظة
+        <a href="https://litesoftit.com/" target="_blank" rel="noopener noreferrer"> لايت سوفت ©</a>
+        <span id="year"></span>
+    </p>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
