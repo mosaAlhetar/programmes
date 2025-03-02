@@ -11,6 +11,8 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+
 </head>
 <body>
 <div class="container">
@@ -72,63 +74,119 @@
               <i class="ri-whatsapp-line"></i>
             </a>
           </div>
-          <section>
-            <div class="request-quote">
-                <h4>املأ النموذج لتحصل على عرضك الخاص!</h4>
-                <div class="modal">
-                    <form class="form" id="quoteForm">
-                        <div class="banner"></div>
-                        <label class="label-title">استكشف عروضنا المميزة لمنتجات الساندوتش بانل</label>
-                        <p class="description-request">الآن خصومات كبيرة بسبب الافتتاح المرتقب لمقرنا الجديد</p>
-                        
-                        <div class="modal--body">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="name">الاسم</label>
-                                    <input type="text" class="form-control" id="name" name="to_name" required placeholder="يرجى إدخال الاسم">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">البريد الإلكتروني</label>
-                                    <input type="email" class="form-control" id="email" name="to_email" required placeholder="يرجى إدخال البريد الإلكتروني">
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">رقم الهاتف</label>
-                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="يرجى إدخال رقم الهاتف">
-                                </div>
-                            </div>
-        
-                            <div class="col">
-                                <div id="serviceProductForm"></div> <!-- يتم استيراده من ملف خارجي -->
-                                <div class="form-group">
-                                    <label for="quantity">الكمية</label>
-                                    <input type="text" class="form-control" id="quantity" name="quantity" placeholder="يرجى إدخال الكمية">
-                                </div>
-                            </div>
-        
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="address">العنوان</label>
-                                    <input type="text" class="form-control" id="address" name="address" placeholder="يرجى إدخال العنوان">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">الرسالة</label>
-                                    <textarea class="form-control" id="message" name="message" placeholder="اكتب رسالتك"></textarea>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <span id="successMessage" style="display:none;">شكرا لك على تواصلك</span>
-        
-                        <div class="modal--footer">
-                            <label class="price"><sup>$</sup>0<sub>السعر</sub></label>
-                            <button type="submit" class="upgrade-btn">تواصل معنا</button>
-                        </div>
-                    </form>
+      
+
+
+
+       
+    </div>
+    <section class="container-swiper">
+    <div class="section-title">
+        <h2>منتجاتنا المميزة</h2>
+    </div>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="subscribe">
+                    <img src="assets/img/مظلات حديد خضراء.jpg" alt="مظلات جلسات خارجية">
+                    <p>مظلات جلسات خارجية</p>
                 </div>
             </div>
-          </section>
+            <div class="swiper-slide">
+                <div class="subscribe">
+                    <img src="assets/img/غرف جاهزة.jpg" alt="غرف جاهزة">
+                    <p>غرف جاهزة</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="subscribe">
+                    <img src="assets/img/سندوش.jpg" alt="سندوش">
+                    <p>سندوش</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="subscribe">
+                    <img src="assets/img/مظلات حديد خضراء.jpg" alt="مظلات جلسات خارجية">
+                    <p>مظلات حدائق</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="subscribe">
+                    <img src="assets/img/مظلات حديد خضراء.jpg" alt="مظلات جلسات خارجية">
+                    <p>هناجر</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="subscribe">
+                    <img src="assets/img/مظلات حديد خضراء.jpg" alt="مظلات جلسات خارجية">
+                    <p>مظلات سيارات</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-
+    </section>
+    
+    <section>
+        <div class="request-quote">
+            <h4>املأ النموذج لتحصل على عرضك الخاص!</h4>
+            <div class="modal">
+                <form class="form" id="quoteForm">
+                    <div class="banner"></div>
+                    <label class="label-title">استكشف عروضنا المميزة لمنتجات الساندوتش بانل</label>
+                    <p class="description-request">الآن خصومات كبيرة بسبب الافتتاح المرتقب لمقرنا الجديد</p>
+                    
+                    <div class="modal--body">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="name">الاسم</label>
+                                <input type="text" class="form-control" id="name" name="to_name" required placeholder="يرجى إدخال الاسم">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" name="to_email" required placeholder="يرجى إدخال البريد الإلكتروني">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="يرجى إدخال رقم الهاتف">
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div id="serviceProductForm"></div> <!-- يتم استيراده من ملف خارجي -->
+                            <div class="form-group">
+                                <label for="quantity">الكمية</label>
+                                <input type="text" class="form-control" id="quantity" name="quantity" placeholder="يرجى إدخال الكمية">
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="address">العنوان</label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="يرجى إدخال العنوان">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">الرسالة</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="اكتب رسالتك"></textarea>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <span id="successMessage" style="display:none;">شكرا لك على تواصلك</span>
+    
+                    <div class="modal--footer">
+                        <label class="price"><sup>$</sup>0<sub>السعر</sub></label>
+                        <button type="submit" class="upgrade-btn">تواصل معنا</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+     
 </div>
 <div class="footer">
     <p>جميع الحقوق محفوظة
@@ -140,5 +198,53 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+ <!-- Swiper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            spaceBetween: 30,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    });
+</script>
+
 </body>
 </html>
