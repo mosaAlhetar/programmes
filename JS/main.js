@@ -21,3 +21,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+// document.addEventListener("DOMContentLoaded", function () {
+//     emailjs.init("g6Iv19twE6sc8t1ZC"); // إدخال معرف المستخدم من EmailJS
+
+//     const form = document.getElementById("quoteForm");
+//     const successMessage = document.getElementById("successMessage");
+
+//     form.addEventListener("submit", function (e) {
+//         e.preventDefault();
+
+//         emailjs.sendForm("service_m3o322r", "template_80kc4sm", form)
+//             .then(
+//                 function (response) {
+//                     console.log("تم الإرسال بنجاح:", response.status, response.text);
+//                     form.reset();
+//                     successMessage.style.display = "block";
+//                 },
+//                 function (error) {
+//                     console.log("حدث خطأ في الإرسال:", error);
+//                 }
+//             );
+//     });
+// });
+
