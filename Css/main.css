@@ -22,6 +22,11 @@
   --font-regular: 500;
   --font-medium: 600;
   --font-semi-bold: 700;
+  --global-palette1: #718096;
+  --global-palette2: rgb(51, 6, 94);
+  --global-palette3: #718096;
+  --global-palette4: #718096;
+  
 }
 @media screen and (min-width: 1000px) {
   :root {
@@ -143,7 +148,10 @@ section {
 
 /* header */
 
+
+
 .haeder-top {
+  position: fixed;
     display: grid;
     grid-template-columns: 1fr 6fr;
     align-items: center;
@@ -165,6 +173,99 @@ section {
     cursor: pointer;
     margin: 10px;
   }
+ 
+
+/* .logo img {
+  width: 200px; /* ضبط حجم الشعار *
+  height: auto;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap; /* منع النص من الانقسام *
+}
+
+.logo ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.logo ul li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.logo ul li a:hover {
+  color: #ff6600;
+}
+
+/* 📱 تصميم خاص بالشاشات الصغيرة (الموبايل) *
+@media (max-width: 768px) {
+  .logo {
+      flex-direction: column; /* جعل العناصر عمودية عند صغر الشاشة *
+      text-align: center;
+  }
+
+  .logo img {
+      width: 50px; /* تصغير الشعار قليلاً *
+  }
+
+  .logo ul {
+      flex-direction: column; /* جعل القائمة عمودية *
+      gap: 10px;
+      padding-top: 10px;
+  }
+} */
+
+
+ .logo img {
+  width: 150px; /* ضبط عرض الصورة */
+  height: auto; /* الحفاظ على نسبة الأبعاد */
+  object-fit: contain; /* منع التشويه */
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo ul {
+  display: flex; /* جعل القائمة أفقية */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px; /* مسافة بين العناصر */
+}
+
+.logo ul li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.logo ul li a:hover {
+  color: #ff6600; /* لون عند التمرير */
+} */
+
+
   .main-color {
     color: var(--main-color) !important;
   }
@@ -287,6 +388,49 @@ section {
       z-index: 999;
       padding: 10px 20px;
     }
+    .dropdown-menu {
+      display: flex;
+      flex-direction: column; /* جعل العناصر عمودية */
+      align-items: center; /* توسيط المحتوى */
+      justify-content: center;
+      padding: 20px;
+      background: white;
+      width: 100%;
+      max-width: 350px; /* التحكم في الحد الأقصى للعرض */
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
+  
+  .dropdown-menu img {
+      width: 80%; /* جعل العرض 80% من حجم القائمة */
+      max-width: 200px; /* الحد الأقصى للعرض */
+      height: auto; /* الحفاظ على نسبة الأبعاد */
+      object-fit: contain; /* منع التشويه */
+      margin-bottom: 10px;
+  }
+  
+  .dropdown-menu h3 {
+      font-size: 20px;
+      color: #333;
+  }
+  
+  .dropdown-menu span {
+      font-size: 16px;
+      color: #777;
+  }
+  
+  /* 📱 تحسين المظهر على الشاشات الصغيرة */
+  @media (max-width: 480px) {
+      .dropdown-menu {
+          max-width: 90%; /* تمدد القائمة أكثر لتناسب الشاشة */
+      }
+  
+      .dropdown-menu img {
+          max-width: 150px; /* تقليل حجم الصورة قليلاً */
+      }
+  }
+  
     
     .dropdown-menu::before{
       content: '';
@@ -663,6 +807,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* background-color: cyan; */
   }
   
   .banner {
@@ -676,8 +821,9 @@ section {
     font-size: var(--h2-font-size);
     line-height: 32px;
     text-align: center;
-    color: #2b2b2f;
+    /* color: #2b2b2f; */
     margin-bottom: 15px;
+    color:var(--global-palette2)
   }
   .description-request {
     max-width: 80%;
@@ -685,7 +831,8 @@ section {
     font-size: var(--normal-font-size);
     line-height: 20px;
     text-align: center;
-    color: #5f5d6b;
+    /* color: #5f5d6b; */
+    color: var(--global-palette2);
   }
   
   .modal--footer {
@@ -747,6 +894,9 @@ section {
   }
   .form-group {
     margin-top: 15px;
+   
+    color: var(--global-palette2)
+    font-weight: bold
   }
   
   .form-control {
@@ -764,6 +914,7 @@ section {
   
   input {
     background-color: #f8f8f8;
+    
     color: #333;
   }
   
@@ -783,6 +934,11 @@ section {
  .section-title {
   text-align: center;
   margin-bottom: 40px;
+}
+ h4 {
+ 
+  color: rgb(47, 0, 255);
+  font-weight: bold;
 }
 
 .section-title h2 {
@@ -899,3 +1055,220 @@ section {
   width: 100%;
 }
  /* Swiper */
+ /*معلومات الاتصال*/
+ /* تنسيق العنوان والقسم */
+./* تنسيق القسم الرئيسي */
+/* تنسيق القسم الرئيسي */
+.section-container {
+  display: flex;
+  justify-content: space-between; /* يجعل النص على اليمين والتواصل على اليسار */
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  direction: rtl; /* لجعل النصوص بالعربية بشكل مناسب */
+}
+
+/* تنسيق النص */
+.section-text {
+  flex: 1;
+  text-align: right; /* محاذاة النص إلى اليمين */
+  max-width: 50%;
+}
+
+.section-text h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+/* تنسيق القسم الرئيسي */
+.section-container {
+  display: flex;
+  justify-content: space-between; /* توزيع النص على اليمين والتواصل على اليسار */
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  direction: rtl; /* لضبط الكتابة بالعربية */
+}
+
+/* جعل النص على اليمين */
+.section-text {
+  flex: 1;
+  text-align: right; 
+  max-width: 50%;
+  
+  /* text-align: left; */
+  max-width: 45%;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* جعل معلومات التواصل على اليسار */
+.contact-info {
+  flex: 1;
+  text-align: left; /* لضبط محاذاة النصوص لليسار */
+  max-width: 45%;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  float: left; /* تثبيت المعلومات على اليسار */
+}
+
+/* تنسيق قائمة معلومات التواصل */
+.elementor-icon-list-items {
+  list-style: none;
+  padding: 0;
+}
+
+.elementor-icon-list-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* تنسيق الرموز */
+.elementor-icon-list-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* تنسيق النصوص */
+.elementor-icon-list-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* زر عرض المزيد */
+.btn-more {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-more:hover {
+  background-color: #e65c00;
+}
+
+/* تحسين المظهر على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .section-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .section-text, .contact-info {
+      max-width: 100%;
+      text-align: center;
+      float: none; /* إزالة التثبيت عند تصغير الشاشة */
+  }
+
+  .elementor-icon-list-item {
+      justify-content: center;
+  }
+}
+
+
+/* تنسيق معلومات الاتصال */
+.contact-info {
+  flex: 1;
+  text-align: left; /* محاذاة النصوص لليسار */
+  max-width: 45%;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h5 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.elementor-icon-list-items {
+  list-style: none;
+  padding: 0;
+}
+
+.elementor-icon-list-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.elementor-icon-list-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.elementor-icon-list-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* زر عرض المزيد */
+.btn-more {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-more:hover {
+  background-color: #e65c00;
+}
+
+/* تحسين المظهر على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .section-container {
+      flex-direction: column; /* ترتيب العناصر عموديًا */
+      text-align: center;
+  }
+
+  .section-text, .contact-info {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .elementor-icon-list-item {
+      justify-content: center;
+  }
+}
+
+/*العداد*/
+/* تنسيق القسم بشكل عام */

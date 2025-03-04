@@ -21,30 +21,63 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-// document.addEventListener("DOMContentLoaded", function () {
-//     emailjs.init("g6Iv19twE6sc8t1ZC"); // إدخال معرف المستخدم من EmailJS
-
-//     const form = document.getElementById("quoteForm");
-//     const successMessage = document.getElementById("successMessage");
-
-//     form.addEventListener("submit", function (e) {
-//         e.preventDefault();
-
-//         emailjs.sendForm("service_m3o322r", "template_80kc4sm", form)
-//             .then(
-//                 function (response) {
-//                     console.log("تم الإرسال بنجاح:", response.status, response.text);
-//                     form.reset();
-//                     successMessage.style.display = "block";
-//                 },
-//                 function (error) {
-//                     console.log("حدث خطأ في الإرسال:", error);
-//                 }
-//             );
-//     });
-// });
-
 
 
 
 // hhhhhhhhh
+// تفعيل الـ Swiper للمحتوى
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  
+  // تفعيل العد التنازلي (Counter)
+  document.querySelectorAll('.counter-number').forEach(function (counter) {
+    let countTo = parseInt(counter.getAttribute('data-to-value'));
+    let count = 0;
+  
+    const interval = setInterval(function () {
+      counter.innerText = count;
+      if (count >= countTo) {
+        clearInterval(interval);
+      }
+      count += Math.ceil(countTo / 100);
+    }, 10);
+  });
+  
+// lllllll
+// تفعيل الـ Swiper
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1, // عرض شريحة واحدة في المرة
+    spaceBetween: 10, // المسافة بين الشرائح
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    loop: true, // التكرار بين الشرائح
+  });
+  
+
