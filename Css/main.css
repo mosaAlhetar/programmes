@@ -348,7 +348,108 @@ section {
   .social-icons :nth-child(3) {
     color: #cd201f;
   }
-  
+  /*btn-تعديل */
+  /* ضبط زر الإغلاق */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* تغيير اللون حسب التصميم */
+}
+
+/* تحسين القائمة المنسدلة */
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px; /* أو حسب الحاجة */
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* تنسيق الصورة في القائمة */
+.dropdown-menu img {
+  display: block;
+  margin: 20px auto;
+  max-width: 120px; /* تقليل حجم اللوجو */
+}
+
+  /*Endbtn*/
+  /* menu2*/
+  /* تنسيق حاوية اللوجو */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* تنسيق الصورة داخل اللوجو */
+.logo img {
+  max-width: 200px; /* حجم مناسب للشعار */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* تنسيق القائمة */
+.logo ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* المسافة بين العناصر */
+}
+
+/* تنسيق عناصر القائمة */
+.logo ul .dropdownItem1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.logo ul .dropdownItem1 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo ul .dropdownItem1 a:hover {
+  color: #ff9800; /* لون التفاعل */
+}
+
+/* تنسيق الأيقونات */
+.logo ul .dropdownItem1 i {
+  font-size: 18px;
+  color: #ff9800;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .logo ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo ul .dropdownItem1 {
+    justify-content: center;
+  }
+}
+
+  /*Endmenu2*/
   /* menu */
   
   
@@ -1240,7 +1341,7 @@ section {
   display: block;
   margin-top: 10px;
   padding: 8px 15px;
-  background-color: #ff6600;
+  background-color:#27ae60 ;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1272,3 +1373,151 @@ section {
 
 /*العداد*/
 /* تنسيق القسم بشكل عام */
+/* الحاوية الرئيسية للـ Swiper */
+/* .container-swiper {
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+/* تنسيق العنوان *
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* إعدادات الـ Swiper *
+.swiper-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.subscribe {
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.subscribe:hover img {
+  transform: scale(1.1); /* تأثير تكبير الصورة عند التمرير *
+}
+
+.subscribe p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* إعدادات التحكم في التمرير *
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* التنسيق للقسم الذي يحتوي على الأرقام *
+.has_eae_slider {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.elementor-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.elementor-column {
+  width: 30%;
+  text-align: center;
+}
+
+.elementor-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.counter-number-suffix {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* تحسين التفاعل على الأجهزة المحمولة *
+@media (max-width: 768px) {
+  .elementor-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .elementor-column {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .swiper-container {
+    height: 300px;
+  }
+} */
